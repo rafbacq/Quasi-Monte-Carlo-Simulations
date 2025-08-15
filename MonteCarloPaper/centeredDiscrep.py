@@ -3,16 +3,6 @@ from scipy.stats import qmc
 import pandas as pd
 
 def compute_centered_discrepancy(points, num_grid=10000):
-    """
-    Compute the centered discrepancy of a point set in [0,1]^d.
-    
-    Args:
-        points (ndarray): An (n, d) array of points in [0,1]^d
-        num_grid (int): Number of random test boxes (x vectors)
-
-    Returns:
-        float: The centered discrepancy D_C(P)
-    """
     n, d = points.shape
     max_diff = 0.0
 
